@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)*/
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+
+.contenair {
+  width: 75%;
+  max-width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 900px) {
+  .contenair {
+    width: 90%;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  row-gap: 20px;
+}
+@media screen and (max-width: 900px) {
+  header {
+    margin: 30px 0;
+  }
+}
+header h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+@media screen and (max-width: 900px) {
+  header h1 {
+    font-size: 34px;
+  }
+}
+header div {
+  display: flex;
+  align-items: baseline;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+header div p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  max-width: 475px;
+}
+header div img {
+  margin: 0 0 0 5px;
+}
+
+.hero img {
+  width: 100%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cont-ingredients {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .cont-ingredients {
+    flex-direction: column;
+  }
+}
+
+aside {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  height: 360px;
+  padding: 60px;
+  margin: 30px 0;
+}
+@media screen and (max-width: 900px) {
+  aside {
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+aside .cont-icon {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  aside .cont-icon {
+    margin: 30px 0;
+    width: 125px;
+  }
+}
+aside .cont-icon span {
+  font-size: 40px;
+  margin: 0 10px 0 0;
+}
+aside .cont-txt {
+  display: flex;
+  flex-direction: column;
+}
+aside .cont-txt h2 {
+  color: #BDBDBD;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+aside .cont-txt p {
+  margin-top: 5px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ingredients, .instructions {
+  width: 60%;
+}
+@media screen and (max-width: 900px) {
+  .ingredients, .instructions {
+    width: 100%;
+  }
+}
+
+section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0 20px 0;
+}
+section h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 40px 0 20px 0;
+  font-style: italic;
+}
+section strong {
+  font-weight: 700;
+}
+section div {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+section input[type=checkbox] {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 22px;
+  min-height: 22px;
+  margin: 10PX 10px 0 0;
+  position: relative;
+  top: 5px;
+}
+section li, section label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+section ol li {
+  list-style: none;
+}
+section ol span {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 10px;
+  background-color: #F2994A;
+  margin: 10PX 10px 0 0;
+  position: relative;
+  top: 5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  color: #A9A9A9;
+  margin: 40px 0;
+}
+footer p {
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
